@@ -11,12 +11,16 @@
 <body>
 <x-dc>
 <helmet>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Cormorant+Garamond:ital,wght@1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Archivo:wght@400;500&amp;family=Cormorant+Garamond:ital,wght@1,400&amp;family=IBM+Plex+Mono:wght@500&amp;family=Unbounded:wght@600&amp;family=Bodoni+Moda:ital,wght@1,400&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0}
 :root{--m:clamp(20px,4.44vw,64px)}
 [data-theme="visualaid"]{--surface:#ffffff;--sunken:#f2f2f0;--inverse:#111111;--ink:#111111;--muted:#666666;--ink-inverse:#ffffff;--line:#e5e5e5;--line-strong:#111111;--accent:#ff7012;--on-accent:#111111;--accent-text:#b84a00;--orange:#ff7012;--on-orange:#111111}
+[data-theme="novan"]{--surface:#eeede9;--sunken:#dddbd5;--inverse:#1a1a1a;--ink:#1a1a1a;--muted:#56554f;--ink-inverse:#eeede9;--line:#cfcdc6;--line-strong:#1a1a1a;--accent:#3b3b39;--on-accent:#eeede9;--accent-text:#3b3b39}
 [data-theme="meria"]{--surface:#faf3e1;--sunken:#ecdcbc;--inverse:#3a3024;--ink:#3a3024;--muted:#6b5c48;--ink-inverse:#faf3e1;--line:#e6d7b8;--line-strong:#3a3024;--accent:#a9cde3;--on-accent:#24323c;--accent-text:#3d6a87}
+[data-theme="silt"]{--surface:#e8e4d6;--sunken:#d5cfba;--inverse:#24221b;--ink:#24221b;--muted:#59533f;--ink-inverse:#e8e4d6;--line:#c2baa1;--line-strong:#24221b;--accent:#56603c;--on-accent:#f0ede2;--accent-text:#4c5535}
+[data-theme="verase"]{--surface:#0b0c0e;--sunken:#16181c;--inverse:#e9edf1;--ink:#e9edf1;--muted:#9aa4ae;--ink-inverse:#0b0c0e;--line:#2b3036;--line-strong:#c8d0d8;--accent:#bde6ff;--on-accent:#0b0c0e;--accent-text:#bde6ff}
+[data-theme="florenne"]{--surface:#f8f0ea;--sunken:#efdcd7;--inverse:#3b1721;--ink:#3b1721;--muted:#7a4d57;--ink-inverse:#f8f0ea;--line:#e6cfca;--line-strong:#3b1721;--accent:#6f2035;--on-accent:#f8f0ea;--accent-text:#6f2035}
 a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 </style>
 </helmet>
@@ -29,8 +33,8 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 <header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding:0 var(--m);min-height:72px;box-sizing:border-box;border-bottom:1px solid var(--line)">
 <nav aria-label="Main" style="display:flex;flex-wrap:wrap;gap:8px 24px;flex:1 1 280px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">
 <a href="Category.dc.html">SHOP</a>
-<a href="Main.dc.html#editorial">BRANDS</a>
-<a href="Main.dc.html#editorial">EDITORIAL</a>
+<a href="Category.dc.html">CLOTHING</a>
+<a href="Main.dc.html#editorial">BRAND</a>
 <a href="Main.dc.html#store">STORE</a>
 </nav>
 <a href="Main.dc.html" style="flex:0 0 auto;font-size:28px;line-height:32px;font-weight:700;font-style:italic;letter-spacing:-.04em">VISUAL AID</a>
@@ -44,88 +48,97 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 
 <main>
 
-<!-- 01 HERO VISUAL -->
+<!-- 01 HERO VISUAL (split) -->
 <section aria-label="Hero Visual">
-<div style="aspect-ratio:16/9;background:var(--sunken);display:flex;align-items:flex-end;padding:24px var(--m);box-sizing:border-box">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">HERO VISUAL · 16:9 · NOVAN_HERO_01</span>
-</div>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px 96px;padding:40px var(--m) 0">
-<div style="display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-wrap:wrap;min-height:640px">
+<div style="flex:2 1 320px;padding:48px var(--m);display:flex;flex-direction:column;justify-content:space-between;gap:48px;box-sizing:border-box">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 · HERO VISUAL</span>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px">
 <span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">LOOKBOOK 01 / 05 — NØVAN</span>
 <h1 style="margin:0;font-size:56px;line-height:60px;font-weight:500;letter-spacing:-.02em">Form Before Decoration</h1>
-</div>
-<div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px;max-width:36em">
-<p style="margin:0;font-size:16px;line-height:28px">비례와 구조, 절제로 완성한 도시적 미니멀리즘을 룩북으로 먼저 만나보세요.</p>
+<p style="margin:0;font-size:16px;line-height:28px;max-width:36em">비례와 구조, 절제로 완성한 도시적 미니멀리즘을 룩북으로 먼저 만나보세요.</p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px">
 <a href="BrandNovan.dc.html" style="display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW LOOKBOOK →</a>
+<a href="#shop-the-look" style="font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">SHOP THE LOOK ↓</a>
 </div>
+</div>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 / 05</span>
+</div>
+<div data-theme="novan" style="flex:3 1 480px;min-height:420px;background:var(--sunken);color:var(--ink);display:flex;flex-direction:column;justify-content:space-between;gap:16px;padding:24px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">HERO IMAGE · 16:9 · NOVAN_HERO_01</span><span style="font-size:12px;line-height:18px;color:var(--muted);max-width:28em">NØVAN LOOK 01 — 콘크리트 계단, 직선 구도, 낮은 채도. 모델은 오른쪽, 왼쪽 40%는 텍스트 여백.</span></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:0 24px;padding:0 var(--m)">
+<div style="flex:1 1 140px;border-top:1px solid var(--line-strong);padding:16px 0 24px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">01&nbsp;&nbsp;NØVAN</div>
+<div style="flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted)">02&nbsp;&nbsp;MÉRIA</div>
+<div style="flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted)">03&nbsp;&nbsp;SILT</div>
+<div style="flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted)">04&nbsp;&nbsp;VÉRASE</div>
+<div style="flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted)">05&nbsp;&nbsp;FLORÉNNE</div>
 </div>
 </section>
 
-<!-- 02 EDITORIAL / CURATION -->
+<!-- 02 BRANDS — each card in its own brand zone -->
 <section id="editorial" style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 · EDITORIAL / CURATION</span>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 · BRANDS</span>
 <h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">취향으로 발견하는 브랜드</h2>
-<p style="margin:0;font-size:16px;line-height:28px;color:var(--muted);max-width:36em">룩북에서 스타일을 먼저 만나고, 브랜드와 제품으로 이어집니다.</p>
+<p style="margin:0;font-size:16px;line-height:28px;color:var(--muted);max-width:36em">브랜드마다 다른 색과 서체로, 룩북에서 시작해 브랜드와 제품으로 이어집니다.</p>
 </div>
 <a href="Main.dc.html#editorial" style="display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">ALL BRANDS →</a>
 </div>
-<div style="display:flex;flex-wrap:wrap;gap:48px 24px">
-<a href="BrandNovan.dc.html" style="flex:1 1 360px;display:flex;flex-direction:column;gap:16px;text-decoration:none">
-<div style="aspect-ratio:4/5;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">LOOK · 4:5 · NOVAN_LOOKBOOK_01</span></div>
-<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px">
-<span style="font-size:18px;line-height:26px;font-weight:500">NØVAN — Quiet Structure</span>
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 / 05</span>
+<div style="display:flex;gap:24px;overflow-x:auto;padding-bottom:8px;align-items:flex-start">
+<a href="BrandNovan.dc.html" data-theme="novan" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">NØVAN LOOK 01 — 콘크리트 계단, 직선 구도, 낮은 채도</span></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Archivo,'Noto Sans KR',sans-serif;font-size:28px;line-height:32px;font-weight:500;letter-spacing:.08em;color:var(--ink)">NØVAN</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 / 05</span></div>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">Quiet Structure — 도시적 미니멀리즘</span>
 </div>
-<span style="font-size:12px;line-height:18px;color:var(--muted)">도시적 미니멀리즘</span>
 </a>
-<a href="BrandMeria.dc.html" style="flex:1 1 360px;display:flex;flex-direction:column;gap:16px;text-decoration:none">
-<div style="aspect-ratio:4/5;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">LOOK · 4:5 · MERIA_LOOKBOOK_01</span></div>
-<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px">
-<span style="font-size:18px;line-height:26px;font-weight:500">MÉRIA — Everyday Escape</span>
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 / 05</span>
+<a href="BrandMeria.dc.html" data-theme="meria" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">MÉRIA LOOK 01 — 테라스, 자연광, 바람에 움직이는 린넨</span></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'Cormorant Garamond','Noto Serif KR',serif;font-style:italic;font-size:36px;line-height:36px;font-weight:400;letter-spacing:0;color:var(--ink)">Méria</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 / 05</span></div>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">Everyday Escape — 여유로운 리조트 무드</span>
 </div>
-<span style="font-size:12px;line-height:18px;color:var(--muted)">여유로운 리조트 무드</span>
 </a>
+<div data-theme="silt" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">SILT LOOK 01 — 채석장 가장자리, 캔버스와 돌의 질감, 흐린 날 확산광</span></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'IBM Plex Mono','Noto Sans KR',monospace;font-size:26px;line-height:32px;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)">SILT</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">03 / 05</span></div>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">Made to Move — 자연과 기능성의 워크웨어</span>
 </div>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 32px;border-top:1px solid var(--line);padding-top:8px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">
-<span style="font-size:11px;line-height:14px;letter-spacing:.1em;color:var(--muted)">MORE</span>
-<span style="display:inline-flex;align-items:center;min-height:44px">SILT →</span>
-<span style="display:inline-flex;align-items:center;min-height:44px">VÉRASE →</span>
-<span style="display:inline-flex;align-items:center;min-height:44px">FLORÉNNE →</span>
 </div>
+<div data-theme="verase" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">VÉRASE LOOK 01 — 크롬 기둥, 직접 플래시, 아이스 블루 반사</span></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Unbounded,'Noto Sans KR',sans-serif;font-size:22px;line-height:32px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:var(--accent)">VÉRASE</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">04 / 05</span></div>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">Future After Dark — 차갑고 실험적인 퓨처리즘</span>
+</div>
+</div>
+<div data-theme="florenne" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">FLORÉNNE LOOK 01 — 크림 스튜디오, 버건디 꽃 한 송이, 시어 소재의 겹침</span></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'Bodoni Moda','Noto Serif KR',serif;font-style:italic;font-size:34px;line-height:36px;font-weight:400;letter-spacing:0;color:var(--accent)">Florénne</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">05 / 05</span></div>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">Softness as Form — 꽃을 담은 섬세한 아트웨어</span>
+</div>
+</div>
+</div>
+<div style="height:1px;background:var(--line)"><div style="width:30%;height:1px;background:var(--line-strong)"></div></div>
 </section>
 
-<!-- 03 FEATURED BRAND (brand zone: MÉRIA) -->
-<section data-theme="meria" style="margin-top:120px;background:var(--surface);color:var(--ink);padding:120px var(--m);display:flex;flex-direction:column;gap:48px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">03 · FEATURED BRAND</span>
-<div style="aspect-ratio:21/9;background:var(--sunken);display:flex;align-items:flex-end;padding:24px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">FEATURED · 21:9 · MERIA_HERO_01</span></div>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px 96px">
-<div style="display:flex;flex-direction:column;gap:20px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">MÉRIA — FEATURED BRAND</span>
-<span style="font-family:'Cormorant Garamond','Noto Serif KR',serif;font-style:italic;font-weight:400;font-size:72px;line-height:72px;letter-spacing:-.01em">Everyday Escape</span>
-</div>
-<div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px;max-width:36em">
-<p style="margin:0;font-size:16px;line-height:28px">도시의 일상에서도 휴양지의 느슨한 감각을 느낄 수 있는 라이프스타일 패션 브랜드입니다.</p>
-<a href="BrandMeria.dc.html" style="display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW BRAND →</a>
-</div>
-</div>
-</section>
-
-<!-- 04 NEW ARRIVALS -->
-<section style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
+<!-- 03 SHOP THE LOOK (hero look → products) -->
+<section id="shop-the-look" style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">04 · NEW ARRIVALS</span>
-<h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">New Arrivals</h2>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">03 · SHOP THE LOOK</span>
+<h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">Shop the Look</h2>
+<span style="font-size:14px;line-height:22px;color:var(--muted)">NØVAN LOOK 01 — 첫 화면의 룩에 입은 아이템입니다.</span>
 </div>
-<a href="Category.dc.html" style="display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW ALL →</a>
+<a href="BrandNovan.dc.html" style="display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW LOOKBOOK →</a>
 </div>
-<div style="display:flex;flex-wrap:wrap;gap:64px 24px">
-<sc-for list="{{newArrivals}}" as="p" hint-placeholder-count="3">
-<div style="flex:1 1 360px;display:flex;flex-direction:column;gap:12px">
-<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">PRODUCT · 3:4</span></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:48px 24px">
+<sc-for list="{{lookItems}}" as="p" hint-placeholder-count="4">
+<a href="Category.dc.html" style="display:flex;flex-direction:column;gap:12px;text-decoration:none">
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:16px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">PRODUCT · 3:4</span></div>
 <div style="display:flex;flex-direction:column;gap:8px">
 <div style="display:flex;align-items:center;gap:8px;min-height:14px">
 <span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">{{p.brand}}</span>
@@ -136,44 +149,22 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 <span style="font-size:12px;line-height:18px">{{p.name}}</span>
 <span style="font-size:12px;line-height:18px;color:var(--muted)">{{p.price}}</span>
 </div>
-</div>
-</sc-for>
-</div>
-</section>
-
-<!-- 05 RECOMMENDED PRODUCTS -->
-<section style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">05 · RECOMMENDED PRODUCTS</span>
-<h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">Picked for Your Taste</h2>
-</div>
-<div style="display:flex;flex-wrap:wrap;gap:48px 96px;align-items:flex-start">
-<div style="flex:6 1 420px;display:flex;flex-direction:column;border-bottom:1px solid var(--line)">
-<sc-for list="{{recommended}}" as="p" hint-placeholder-count="5">
-<a href="Category.dc.html" style="display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;border-top:1px solid var(--line);text-decoration:none">
-<div style="display:flex;flex-direction:column;gap:4px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">{{p.brand}}</span>
-<span style="font-size:18px;line-height:26px;font-weight:500">{{p.name}}</span>
-</div>
-<div style="display:flex;align-items:center;gap:24px"><span style="font-size:12px;line-height:18px;color:var(--muted)">{{p.price}}</span><span style="font-size:12px;line-height:16px;font-weight:500">→</span></div>
 </a>
 </sc-for>
 </div>
-<div style="flex:5 1 360px;display:flex;flex-direction:column;gap:12px">
-<div style="aspect-ratio:4/5;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">PREVIEW OF SELECTED ROW · 4:5</span></div>
-</div>
-</div>
 </section>
 
-<!-- 06 FLAGSHIP STORE -->
-<section id="store" style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">06 · FLAGSHIP STORE</span>
-<div style="display:flex;flex-wrap:wrap;gap:48px 96px;align-items:flex-end">
-<div style="flex:2 1 480px;aspect-ratio:3/2;background:var(--sunken);display:flex;align-items:flex-end;padding:24px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">STORE · 3:2</span></div>
-<div style="flex:1 1 280px;display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+<!-- 04 FLAGSHIP STORE -->
+<section id="store" style="margin-top:120px;padding:120px var(--m);background:var(--sunken);display:flex;flex-direction:column;gap:48px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">04 · FLAGSHIP STORE</span>
+<div style="display:flex;flex-wrap:wrap;gap:48px;align-items:stretch">
+<div style="flex:3 1 480px;min-height:420px;height:480px;background:var(--surface);display:flex;align-items:flex-end;padding:24px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">STORE IMAGE · 3:2</span></div>
+<div style="flex:2 1 320px;display:flex;flex-direction:column;justify-content:space-between;gap:32px">
+<div style="display:flex;flex-direction:column;gap:20px">
 <h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">[STORE NAME]</h2>
 <div style="display:flex;flex-direction:column;gap:4px;font-size:14px;line-height:22px;color:var(--muted)"><span>[주소]</span><span>[영업시간]</span><span>[연락처]</span></div>
-<a href="Main.dc.html#store" style="display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW STORE →</a>
+</div>
+<a href="Main.dc.html#store" style="align-self:flex-start;display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW STORE →</a>
 </div>
 </div>
 </section>
@@ -181,7 +172,7 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 </main>
 
 <!-- Footer -->
-<footer style="margin-top:120px;background:var(--inverse);color:var(--ink-inverse);padding:80px var(--m) 40px;display:flex;flex-direction:column;gap:64px">
+<footer style="background:var(--inverse);color:var(--ink-inverse);padding:80px var(--m) 40px;display:flex;flex-direction:column;gap:64px">
 <div style="display:flex;flex-wrap:wrap;gap:48px 96px;justify-content:space-between">
 <div style="flex:1 1 280px;max-width:360px;display:flex;flex-direction:column;gap:16px">
 <span style="font-size:28px;line-height:32px;font-weight:700;font-style:italic;letter-spacing:-.04em">VISUAL AID</span>
@@ -199,22 +190,16 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6500}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4000}}'>
 class Component extends DCLogic {
   renderVals() {
     const price = 'KRW [000,000]';
     return {
-      newArrivals: [
-        { brand: 'NØVAN', name: 'Oversized Wool Coat', price, isNew: true },
-        { brand: 'MÉRIA', name: 'Linen Shirt', price, isNew: false },
-        { brand: 'SILT', name: 'Multi-Pocket Jacket', price, isNew: false }
-      ],
-      recommended: [
-        { brand: 'NØVAN', name: 'Wide Slacks', price },
-        { brand: 'MÉRIA', name: 'Wrap Skirt', price },
-        { brand: 'FLORÉNNE', name: 'Sheer Blouse', price },
-        { brand: 'SILT', name: 'Cargo Pants', price },
-        { brand: 'VÉRASE', name: 'Mesh Top', price }
+      lookItems: [
+        { brand: 'NØVAN', name: 'Oversized Wool Coat — Charcoal', price, isNew: true },
+        { brand: 'NØVAN', name: 'Structured Shirt — Ivory', price, isNew: false },
+        { brand: 'NØVAN', name: 'Wide Slacks — Black', price, isNew: false },
+        { brand: 'NØVAN', name: 'Leather Shoes — Black', price, isNew: false }
       ]
     };
   }
