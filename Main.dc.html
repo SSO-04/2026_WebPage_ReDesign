@@ -1,0 +1,224 @@
+<!doctype html>
+<meta charset="utf-8"><style data-dc-design-system-vars>@layer{:root{--surface:#ffffff;--surface-sunken:#f2f2f0;--surface-inverse:#111111;--ink:#111111;--ink-muted:#666666;--ink-inverse:#ffffff;--line:#e5e5e5;--line-strong:#111111;--orange:#ff7012;--on-orange:#111111;--accent:#ff7012;--on-accent:#111111;--accent-text:#b84a00;--accent-soft:#fff0e5;--danger:#b3261e;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--space-9:120px;--space-10:200px;--radius-0:0;--radius-2:2px;--radius-pill:999px;--radius-arch:320px;--layout-max:1440px;--layout-columns:12;--layout-header:72px;--layout-measure:36em;--font-sans:"Noto Sans KR", "Noto Sans", system-ui, sans-serif;--font-novan:Archivo, "Noto Sans KR", sans-serif;--font-meria:"Cormorant Garamond", "Noto Serif KR", serif;--font-silt:"IBM Plex Mono", "Noto Sans KR", monospace;--font-verase:Unbounded, "Noto Sans KR", sans-serif;--font-florenne:"Bodoni Moda", "Noto Serif KR", serif;--text-display:500 56px/60px var(--font-sans);--text-headline:500 32px/40px var(--font-sans);--text-title:500 18px/26px var(--font-sans);--text-lead:400 16px/28px var(--font-sans);--text-body:400 14px/22px var(--font-sans);--text-body-sm:400 12px/18px var(--font-sans);--text-nav:500 12px/16px var(--font-sans);--text-label:500 11px/14px var(--font-sans);--text-caption:400 11px/16px var(--font-sans);--text-novan-display:500 64px/64px var(--font-novan);--text-meria-display:italic 400 72px/72px var(--font-meria);--text-silt-display:500 44px/48px var(--font-silt);--text-silt-spec:400 11px/16px var(--font-silt);--text-verase-display:600 60px/60px var(--font-verase);--text-florenne-display:italic 400 72px/72px var(--font-florenne);}}</style>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>VISUAL AID — Main</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Cormorant+Garamond:ital,wght@1,400&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+:root{--m:clamp(20px,4.44vw,64px)}
+[data-theme="visualaid"]{--surface:#ffffff;--sunken:#f2f2f0;--inverse:#111111;--ink:#111111;--muted:#666666;--ink-inverse:#ffffff;--line:#e5e5e5;--line-strong:#111111;--accent:#ff7012;--on-accent:#111111;--accent-text:#b84a00;--orange:#ff7012;--on-orange:#111111}
+[data-theme="meria"]{--surface:#faf3e1;--sunken:#ecdcbc;--inverse:#3a3024;--ink:#3a3024;--muted:#6b5c48;--ink-inverse:#faf3e1;--line:#e6d7b8;--line-strong:#3a3024;--accent:#a9cde3;--on-accent:#24323c;--accent-text:#3d6a87}
+a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
+</style>
+</helmet>
+<div data-theme="visualaid" style="background:var(--surface);color:var(--ink);font-family:'Noto Sans KR','Noto Sans',system-ui,sans-serif;font-size:14px;line-height:22px">
+
+<!-- Announcement bar -->
+<div style="background:var(--orange);color:var(--on-orange);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em;text-align:center;padding:10px 16px">10% OFF FOR NEW SIGNED UP MEMBERS</div>
+
+<!-- Header -->
+<header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding:0 var(--m);min-height:72px;box-sizing:border-box;border-bottom:1px solid var(--line)">
+<nav aria-label="Main" style="display:flex;flex-wrap:wrap;gap:8px 24px;flex:1 1 280px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">
+<a href="Category.dc.html">SHOP</a>
+<a href="Main.dc.html#editorial">BRANDS</a>
+<a href="Main.dc.html#editorial">EDITORIAL</a>
+<a href="Main.dc.html#store">STORE</a>
+</nav>
+<a href="Main.dc.html" style="flex:0 0 auto;font-size:28px;line-height:32px;font-weight:700;font-style:italic;letter-spacing:-.04em">VISUAL AID</a>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;flex:1 1 280px;justify-content:flex-end;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">
+<span>SEARCH</span>
+<span>MY</span>
+<span style="display:inline-flex;align-items:center;gap:8px">CART <span style="min-width:18px;height:18px;padding:0 5px;box-sizing:border-box;border-radius:999px;background:var(--orange);color:var(--on-orange);font-size:11px;line-height:18px;text-align:center">0</span></span>
+<span style="color:var(--muted)">KR | JP</span>
+</div>
+</header>
+
+<main>
+
+<!-- 01 HERO VISUAL -->
+<section aria-label="Hero Visual">
+<div style="aspect-ratio:16/9;background:var(--sunken);display:flex;align-items:flex-end;padding:24px var(--m);box-sizing:border-box">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">HERO VISUAL · 16:9 · NOVAN_HERO_01</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px 96px;padding:40px var(--m) 0">
+<div style="display:flex;flex-direction:column;gap:16px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">LOOKBOOK 01 / 05 — NØVAN</span>
+<h1 style="margin:0;font-size:56px;line-height:60px;font-weight:500;letter-spacing:-.02em">Form Before Decoration</h1>
+</div>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px;max-width:36em">
+<p style="margin:0;font-size:16px;line-height:28px">비례와 구조, 절제로 완성한 도시적 미니멀리즘을 룩북으로 먼저 만나보세요.</p>
+<a href="BrandNovan.dc.html" style="display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW LOOKBOOK →</a>
+</div>
+</div>
+</section>
+
+<!-- 02 EDITORIAL / CURATION -->
+<section id="editorial" style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 · EDITORIAL / CURATION</span>
+<h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">취향으로 발견하는 브랜드</h2>
+<p style="margin:0;font-size:16px;line-height:28px;color:var(--muted);max-width:36em">룩북에서 스타일을 먼저 만나고, 브랜드와 제품으로 이어집니다.</p>
+</div>
+<a href="Main.dc.html#editorial" style="display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">ALL BRANDS →</a>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:48px 24px">
+<a href="BrandNovan.dc.html" style="flex:1 1 360px;display:flex;flex-direction:column;gap:16px;text-decoration:none">
+<div style="aspect-ratio:4/5;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">LOOK · 4:5 · NOVAN_LOOKBOOK_01</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px">
+<span style="font-size:18px;line-height:26px;font-weight:500">NØVAN — Quiet Structure</span>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 / 05</span>
+</div>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">도시적 미니멀리즘</span>
+</a>
+<a href="BrandMeria.dc.html" style="flex:1 1 360px;display:flex;flex-direction:column;gap:16px;text-decoration:none">
+<div style="aspect-ratio:4/5;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">LOOK · 4:5 · MERIA_LOOKBOOK_01</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px">
+<span style="font-size:18px;line-height:26px;font-weight:500">MÉRIA — Everyday Escape</span>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 / 05</span>
+</div>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">여유로운 리조트 무드</span>
+</a>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 32px;border-top:1px solid var(--line);padding-top:8px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">
+<span style="font-size:11px;line-height:14px;letter-spacing:.1em;color:var(--muted)">MORE</span>
+<span style="display:inline-flex;align-items:center;min-height:44px">SILT →</span>
+<span style="display:inline-flex;align-items:center;min-height:44px">VÉRASE →</span>
+<span style="display:inline-flex;align-items:center;min-height:44px">FLORÉNNE →</span>
+</div>
+</section>
+
+<!-- 03 FEATURED BRAND (brand zone: MÉRIA) -->
+<section data-theme="meria" style="margin-top:120px;background:var(--surface);color:var(--ink);padding:120px var(--m);display:flex;flex-direction:column;gap:48px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">03 · FEATURED BRAND</span>
+<div style="aspect-ratio:21/9;background:var(--sunken);display:flex;align-items:flex-end;padding:24px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">FEATURED · 21:9 · MERIA_HERO_01</span></div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px 96px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">MÉRIA — FEATURED BRAND</span>
+<span style="font-family:'Cormorant Garamond','Noto Serif KR',serif;font-style:italic;font-weight:400;font-size:72px;line-height:72px;letter-spacing:-.01em">Everyday Escape</span>
+</div>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px;max-width:36em">
+<p style="margin:0;font-size:16px;line-height:28px">도시의 일상에서도 휴양지의 느슨한 감각을 느낄 수 있는 라이프스타일 패션 브랜드입니다.</p>
+<a href="BrandMeria.dc.html" style="display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW BRAND →</a>
+</div>
+</div>
+</section>
+
+<!-- 04 NEW ARRIVALS -->
+<section style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">04 · NEW ARRIVALS</span>
+<h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">New Arrivals</h2>
+</div>
+<a href="Category.dc.html" style="display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW ALL →</a>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:64px 24px">
+<sc-for list="{{newArrivals}}" as="p" hint-placeholder-count="3">
+<div style="flex:1 1 360px;display:flex;flex-direction:column;gap:12px">
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">PRODUCT · 3:4</span></div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:center;gap:8px;min-height:14px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">{{p.brand}}</span>
+<sc-if value="{{p.isNew}}" hint-placeholder-val="{{ false }}">
+<span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em"><span style="width:6px;height:6px;border-radius:999px;background:var(--orange)"></span>NEW</span>
+</sc-if>
+</div>
+<span style="font-size:12px;line-height:18px">{{p.name}}</span>
+<span style="font-size:12px;line-height:18px;color:var(--muted)">{{p.price}}</span>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- 05 RECOMMENDED PRODUCTS -->
+<section style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">05 · RECOMMENDED PRODUCTS</span>
+<h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">Picked for Your Taste</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:48px 96px;align-items:flex-start">
+<div style="flex:6 1 420px;display:flex;flex-direction:column;border-bottom:1px solid var(--line)">
+<sc-for list="{{recommended}}" as="p" hint-placeholder-count="5">
+<a href="Category.dc.html" style="display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;border-top:1px solid var(--line);text-decoration:none">
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">{{p.brand}}</span>
+<span style="font-size:18px;line-height:26px;font-weight:500">{{p.name}}</span>
+</div>
+<div style="display:flex;align-items:center;gap:24px"><span style="font-size:12px;line-height:18px;color:var(--muted)">{{p.price}}</span><span style="font-size:12px;line-height:16px;font-weight:500">→</span></div>
+</a>
+</sc-for>
+</div>
+<div style="flex:5 1 360px;display:flex;flex-direction:column;gap:12px">
+<div style="aspect-ratio:4/5;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">PREVIEW OF SELECTED ROW · 4:5</span></div>
+</div>
+</div>
+</section>
+
+<!-- 06 FLAGSHIP STORE -->
+<section id="store" style="padding:120px var(--m) 0;display:flex;flex-direction:column;gap:48px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">06 · FLAGSHIP STORE</span>
+<div style="display:flex;flex-wrap:wrap;gap:48px 96px;align-items:flex-end">
+<div style="flex:2 1 480px;aspect-ratio:3/2;background:var(--sunken);display:flex;align-items:flex-end;padding:24px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">STORE · 3:2</span></div>
+<div style="flex:1 1 280px;display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+<h2 style="margin:0;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-.01em">[STORE NAME]</h2>
+<div style="display:flex;flex-direction:column;gap:4px;font-size:14px;line-height:22px;color:var(--muted)"><span>[주소]</span><span>[영업시간]</span><span>[연락처]</span></div>
+<a href="Main.dc.html#store" style="display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW STORE →</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer style="margin-top:120px;background:var(--inverse);color:var(--ink-inverse);padding:80px var(--m) 40px;display:flex;flex-direction:column;gap:64px">
+<div style="display:flex;flex-wrap:wrap;gap:48px 96px;justify-content:space-between">
+<div style="flex:1 1 280px;max-width:360px;display:flex;flex-direction:column;gap:16px">
+<span style="font-size:28px;line-height:32px;font-weight:700;font-style:italic;letter-spacing:-.04em">VISUAL AID</span>
+<span style="font-size:12px;line-height:18px;opacity:.7">새로운 브랜드를 발견하는 곳</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:48px 72px;font-size:12px;line-height:18px">
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;opacity:.7">SHOP</span><a href="Category.dc.html">New Arrivals</a><span>Best</span><span>Sale</span><a href="Category.dc.html">Clothing</a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;opacity:.7">BRANDS</span><a href="BrandNovan.dc.html">NØVAN</a><a href="BrandMeria.dc.html">MÉRIA</a><span>SILT</span><span>VÉRASE</span><span>FLORÉNNE</span></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;opacity:.7">EDITORIAL</span><span>Seasonal Curation</span><span>Styling</span><span>Lookbook</span></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;opacity:.7">STORE</span><span>Flagship Store</span><span>Location / Hours</span><span>Stockist</span></div>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:11px;line-height:16px;letter-spacing:.02em;opacity:.7;border-top:1px solid rgba(255,255,255,.2);padding-top:24px"><span>© VISUAL AID</span><span>KR | JP</span></div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const price = 'KRW [000,000]';
+    return {
+      newArrivals: [
+        { brand: 'NØVAN', name: 'Oversized Wool Coat', price, isNew: true },
+        { brand: 'MÉRIA', name: 'Linen Shirt', price, isNew: false },
+        { brand: 'SILT', name: 'Multi-Pocket Jacket', price, isNew: false }
+      ],
+      recommended: [
+        { brand: 'NØVAN', name: 'Wide Slacks', price },
+        { brand: 'MÉRIA', name: 'Wrap Skirt', price },
+        { brand: 'FLORÉNNE', name: 'Sheer Blouse', price },
+        { brand: 'SILT', name: 'Cargo Pants', price },
+        { brand: 'VÉRASE', name: 'Mesh Top', price }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
