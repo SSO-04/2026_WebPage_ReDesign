@@ -22,6 +22,8 @@ body{margin:0}
 [data-theme="verase"]{--surface:#0b0c0e;--sunken:#16181c;--inverse:#e9edf1;--ink:#e9edf1;--muted:#9aa4ae;--ink-inverse:#0b0c0e;--line:#2b3036;--line-strong:#c8d0d8;--accent:#bde6ff;--on-accent:#0b0c0e;--accent-text:#bde6ff}
 [data-theme="florenne"]{--surface:#f8f0ea;--sunken:#efdcd7;--inverse:#3b1721;--ink:#3b1721;--muted:#7a4d57;--ink-inverse:#f8f0ea;--line:#e6cfca;--line-strong:#3b1721;--accent:#6f2035;--on-accent:#f8f0ea;--accent-text:#6f2035}
 a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
+.no-sb{scrollbar-width:none;-ms-overflow-style:none}
+.no-sb::-webkit-scrollbar{display:none}
 </style>
 </helmet>
 <div data-theme="visualaid" style="background:var(--surface);color:var(--ink);font-family:'Noto Sans KR','Noto Sans',system-ui,sans-serif;font-size:14px;line-height:22px">
@@ -46,28 +48,33 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 </div>
 </header>
 
+
 <main>
 
-<!-- 01 HERO VISUAL (split) -->
+<!-- 01 HERO VISUAL — full-bleed image, text on top -->
 <section aria-label="Hero Visual">
-<div style="display:flex;flex-wrap:wrap;min-height:640px">
-<div style="flex:2 1 320px;padding:48px var(--m);display:flex;flex-direction:column;justify-content:space-between;gap:48px;box-sizing:border-box">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 · HERO VISUAL</span>
-<div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+<div data-theme="novan" style="position:relative;min-height:720px;background:var(--sunken);color:var(--ink);padding:48px var(--m);box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 · HERO VISUAL · 16:9 · NOVAN_HERO_01</span>
+<div style="max-width:560px;display:flex;flex-direction:column;align-items:flex-start;gap:24px">
 <span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">LOOKBOOK 01 / 05 — NØVAN</span>
-<h1 style="margin:0;font-size:56px;line-height:60px;font-weight:500;letter-spacing:-.02em">Form Before Decoration</h1>
+<h1 style="margin:0;font-family:Archivo,'Noto Sans KR',sans-serif;font-size:clamp(36px,3.9vw,56px);line-height:1.15;font-weight:500;letter-spacing:.08em">FORM BEFORE<br>DECORATION</h1>
 <p style="margin:0;font-size:16px;line-height:28px;max-width:36em">비례와 구조, 절제로 완성한 도시적 미니멀리즘을 룩북으로 먼저 만나보세요.</p>
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px">
 <a href="BrandNovan.dc.html" style="display:inline-flex;align-items:center;min-height:48px;padding:0 32px;box-sizing:border-box;border:1px solid var(--line-strong);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">VIEW LOOKBOOK →</a>
 <a href="#shop-the-look" style="font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">SHOP THE LOOK ↓</a>
 </div>
 </div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 48px">
+<span style="font-size:12px;line-height:18px;color:var(--muted);max-width:32em">NØVAN LOOK 01 — 콘크리트 계단, 직선 구도, 낮은 채도. 모델은 오른쪽, 왼쪽 40%는 텍스트 여백.</span>
 <span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 / 05</span>
 </div>
-<div data-theme="novan" style="flex:3 1 480px;min-height:420px;background:var(--sunken);color:var(--ink);display:flex;flex-direction:column;justify-content:space-between;gap:16px;padding:24px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">HERO IMAGE · 16:9 · NOVAN_HERO_01</span><span style="font-size:12px;line-height:18px;color:var(--muted);max-width:28em">NØVAN LOOK 01 — 콘크리트 계단, 직선 구도, 낮은 채도. 모델은 오른쪽, 왼쪽 40%는 텍스트 여백.</span></div>
+
+
+
+
 </div>
 <div style="display:flex;flex-wrap:wrap;gap:0 24px;padding:0 var(--m)">
-<div style="flex:1 1 140px;border-top:1px solid var(--line-strong);padding:16px 0 24px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">01&nbsp;&nbsp;NØVAN</div>
+<div style="flex:1 1 140px;border-top:1px solid var(--line-strong);padding:16px 0 24px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em;">01&nbsp;&nbsp;NØVAN</div>
 <div style="flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted)">02&nbsp;&nbsp;MÉRIA</div>
 <div style="flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted)">03&nbsp;&nbsp;SILT</div>
 <div style="flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted)">04&nbsp;&nbsp;VÉRASE</div>
@@ -85,44 +92,58 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 </div>
 <a href="Main.dc.html#editorial" style="display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:16px;font-weight:500;letter-spacing:.06em">ALL BRANDS →</a>
 </div>
-<div style="display:flex;gap:24px;overflow-x:auto;padding-bottom:8px;align-items:flex-start">
+<div class="no-sb" onMouseDown="{{ onDown }}" onMouseMove="{{ onMove }}" onMouseUp="{{ onUp }}" onMouseLeave="{{ onUp }}" onClick="{{ onClick }}" style="display:flex;gap:24px;overflow-x:auto;align-items:stretch;cursor:grab;user-select:none">
 <a href="BrandNovan.dc.html" data-theme="novan" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
-<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">NØVAN LOOK 01 — 콘크리트 계단, 직선 구도, 낮은 채도</span></div>
-<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
-<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Archivo,'Noto Sans KR',sans-serif;font-size:28px;line-height:32px;font-weight:500;letter-spacing:.08em;color:var(--ink)">NØVAN</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 / 05</span></div>
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">NØVAN LOOK 02 — 빈 주차장, 수평선, 정적인 자세</span></div>
+<div style="flex:1 1 auto;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border-top:1px solid var(--line)">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Archivo,'Noto Sans KR',sans-serif;font-size:28px;line-height:36px;font-weight:500;letter-spacing:.08em;color:var(--ink)">NØVAN</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">01 / 05</span></div>
 <span style="font-size:12px;line-height:18px;color:var(--muted)">Quiet Structure — 도시적 미니멀리즘</span>
+</div>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--ink)">VIEW BRAND →</span>
 </div>
 </a>
 <a href="BrandMeria.dc.html" data-theme="meria" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
-<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">MÉRIA LOOK 01 — 테라스, 자연광, 바람에 움직이는 린넨</span></div>
-<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
-<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'Cormorant Garamond','Noto Serif KR',serif;font-style:italic;font-size:36px;line-height:36px;font-weight:400;letter-spacing:0;color:var(--ink)">Méria</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 / 05</span></div>
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">MÉRIA LOOK 02 — 커튼이 날리는 호텔 창가, 버터·샌드 톤</span></div>
+<div style="flex:1 1 auto;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border-top:1px solid var(--line)">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'Cormorant Garamond','Noto Serif KR',serif;font-style:italic;font-size:34px;line-height:36px;font-weight:400;letter-spacing:0;color:var(--ink)">MÉRIA</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">02 / 05</span></div>
 <span style="font-size:12px;line-height:18px;color:var(--muted)">Everyday Escape — 여유로운 리조트 무드</span>
+</div>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--ink)">VIEW BRAND →</span>
 </div>
 </a>
 <div data-theme="silt" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
-<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">SILT LOOK 01 — 채석장 가장자리, 캔버스와 돌의 질감, 흐린 날 확산광</span></div>
-<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
-<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'IBM Plex Mono','Noto Sans KR',monospace;font-size:26px;line-height:32px;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)">SILT</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">03 / 05</span></div>
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">SILT LOOK 02 — 비포장도로를 걷는 뒷모습, 낮은 수평선, 흐린 하늘</span></div>
+<div style="flex:1 1 auto;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border-top:1px solid var(--line)">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'IBM Plex Mono','Noto Sans KR',monospace;font-size:26px;line-height:36px;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)">SILT</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">03 / 05</span></div>
 <span style="font-size:12px;line-height:18px;color:var(--muted)">Made to Move — 자연과 기능성의 워크웨어</span>
+</div>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">상세 페이지 준비 중</span>
 </div>
 </div>
 <div data-theme="verase" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
-<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">VÉRASE LOOK 01 — 크롬 기둥, 직접 플래시, 아이스 블루 반사</span></div>
-<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
-<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Unbounded,'Noto Sans KR',sans-serif;font-size:22px;line-height:32px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:var(--accent)">VÉRASE</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">04 / 05</span></div>
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">VÉRASE LOOK 02 — 크롬 기둥에 기댄 낮은 시점, 아이스 블루 반사</span></div>
+<div style="flex:1 1 auto;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border-top:1px solid var(--line)">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Unbounded,'Noto Sans KR',sans-serif;font-size:22px;line-height:36px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:var(--accent)">VÉRASE</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">04 / 05</span></div>
 <span style="font-size:12px;line-height:18px;color:var(--muted)">Future After Dark — 차갑고 실험적인 퓨처리즘</span>
+</div>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">상세 페이지 준비 중</span>
 </div>
 </div>
 <div data-theme="florenne" style="flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none">
-<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">FLORÉNNE LOOK 01 — 크림 스튜디오, 버건디 꽃 한 송이, 시어 소재의 겹침</span></div>
-<div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)">
-<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'Bodoni Moda','Noto Serif KR',serif;font-style:italic;font-size:34px;line-height:36px;font-weight:400;letter-spacing:0;color:var(--accent)">Florénne</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">05 / 05</span></div>
+<div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:20px;box-sizing:border-box"><span style="font-size:11px;line-height:18px;font-weight:500;letter-spacing:.1em;color:var(--muted)">FLORÉNNE LOOK 02 — 옆으로 선 전신, 오간자 스커트의 볼륨, 버건디 꽃 일부</span></div>
+<div style="flex:1 1 auto;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border-top:1px solid var(--line)">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'Bodoni Moda','Noto Serif KR',serif;font-style:italic;font-size:30px;line-height:36px;font-weight:400;letter-spacing:0;color:var(--accent)">FLORÉNNE</span><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">05 / 05</span></div>
 <span style="font-size:12px;line-height:18px;color:var(--muted)">Softness as Form — 꽃을 담은 섬세한 아트웨어</span>
 </div>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">상세 페이지 준비 중</span>
 </div>
 </div>
-<div style="height:1px;background:var(--line)"><div style="width:30%;height:1px;background:var(--line-strong)"></div></div>
+</div>
 </section>
 
 <!-- 03 SHOP THE LOOK (hero look → products) -->
@@ -141,7 +162,7 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 <div style="aspect-ratio:3/4;background:var(--sunken);display:flex;align-items:flex-end;padding:16px;box-sizing:border-box"><span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">PRODUCT · 3:4</span></div>
 <div style="display:flex;flex-direction:column;gap:8px">
 <div style="display:flex;align-items:center;gap:8px;min-height:14px">
-<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">{{p.brand}}</span>
+<span style="font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em;color:var(--muted)">{{p.n}} · {{p.brand}}</span>
 <sc-if value="{{p.isNew}}" hint-placeholder-val="{{ false }}">
 <span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;line-height:14px;font-weight:500;letter-spacing:.1em"><span style="width:6px;height:6px;border-radius:999px;background:var(--orange)"></span>NEW</span>
 </sc-if>
@@ -190,17 +211,39 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4000}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4100}}'>
 class Component extends DCLogic {
   renderVals() {
     const price = 'KRW [000,000]';
+    const it = (n, name, isNew) => ({ n, brand: 'NØVAN', name, price, isNew: !!isNew });
+    const onDown = (e) => {
+      e.preventDefault();
+      const t = e.currentTarget;
+      this.moved = false;
+      this.drag = { x: e.clientX, left: t.scrollLeft };
+      t.style.cursor = 'grabbing';
+    };
+    const onMove = (e) => {
+      if (!this.drag) return;
+      const dx = e.clientX - this.drag.x;
+      if (Math.abs(dx) > 5) this.moved = true;
+      e.currentTarget.scrollLeft = this.drag.left - dx;
+    };
+    const onUp = (e) => {
+      this.drag = null;
+      e.currentTarget.style.cursor = 'grab';
+    };
+    const onClick = (e) => {
+      if (this.moved) { e.preventDefault(); e.stopPropagation(); this.moved = false; }
+    };
     return {
       lookItems: [
-        { brand: 'NØVAN', name: 'Oversized Wool Coat — Charcoal', price, isNew: true },
-        { brand: 'NØVAN', name: 'Structured Shirt — Ivory', price, isNew: false },
-        { brand: 'NØVAN', name: 'Wide Slacks — Black', price, isNew: false },
-        { brand: 'NØVAN', name: 'Leather Shoes — Black', price, isNew: false }
-      ]
+        it('01', 'Structured Shirt — Ivory', true),
+        it('02', 'Oversized Wool Coat — Charcoal'),
+        it('03', 'Wide Slacks — Black'),
+        it('04', 'Leather Shoes — Black')
+      ],
+      onDown, onMove, onUp, onClick
     };
   }
 }
