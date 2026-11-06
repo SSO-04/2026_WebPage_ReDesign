@@ -2,7 +2,7 @@
    Shell theme + five brand zones. Orange is used only on the announcement bar,
    the cart badge and the NEW dot. No icons, gradients or shadows. */
 
-:root{--m0:clamp(20px,4.44vw,64px);--m:max(var(--m0),calc((100vw - 1440px)/2 + 64px))} /* 1440px 이상에서는 콘텐츠 폭을 1312px로 고정하고 가운데 정렬 */
+:root{--m0:clamp(20px,4.44vw,64px);--m:max(var(--m0),calc((100vw - 1728px)/2 + 64px))} /* 1728px 이상에서는 콘텐츠 폭을 1600px로 고정하고 가운데 정렬 */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -94,7 +94,7 @@ a.btn-solid:hover,button.btn-solid:hover{background:transparent;color:var(--ink)
 .hscroll img,.hscroll a{-webkit-user-drag:none}
 
 /* products */
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:48px 24px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(max(260px,calc((100% - 72px)/4)),1fr));gap:48px 24px}
 .prod{display:flex;flex-direction:column;gap:12px;text-align:left;width:100%}
 .prod .info{display:flex;flex-direction:column;gap:8px}
 .prod .nm{font-size:12px;line-height:18px}
@@ -113,9 +113,15 @@ a.btn-solid:hover,button.btn-solid:hover{background:transparent;color:var(--ink)
 .hero .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px}
 .htabs{display:flex;flex-wrap:wrap;gap:0 24px;padding:0 var(--m)}
 .htabs button{flex:1 1 140px;border-top:1px solid var(--line);padding:16px 0 24px;font-size:12px;line-height:16px;letter-spacing:.06em;color:var(--muted);text-align:left}
+.htabs{--hero-dur:6s}
+.htabs button{position:relative}
 .htabs button[aria-pressed="true"]{border-top-color:var(--line-strong);color:var(--ink);font-weight:500}
+.htabs button[aria-pressed="true"]::after{content:"";position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--ink);animation:hprog var(--hero-dur) linear forwards}
+.htabs.paused button::after{animation-play-state:paused}
+@keyframes hprog{from{width:0}to{width:100%}}
+@media (prefers-reduced-motion:reduce){.htabs button[aria-pressed="true"]::after{width:100%;animation:none}}
 
-.bcard{flex:0 0 min(380px,78vw);display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none}
+.bcard{flex:0 0 min(78vw,max(380px,calc((100% - 72px)/4)));display:flex;flex-direction:column;background:var(--surface);color:var(--ink);text-decoration:none}
 .bcard:hover{text-decoration:none}
 .bcard .cb{flex:1 1 auto;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;border-top:1px solid var(--line)}
 .bcard .nrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
@@ -165,7 +171,7 @@ a.btn-solid:hover,button.btn-solid:hover{background:transparent;color:var(--ink)
 .empty{padding:96px 0;text-align:center}
 
 /* ---------- brand pages ---------- */
-.bhero{--m:var(--m0);display:flex;flex-wrap:wrap;min-height:680px;max-width:1440px;margin:0 auto}
+.bhero{--m:var(--m0);display:flex;flex-wrap:wrap;min-height:680px;max-width:1728px;margin:0 auto}
 .bhero .txt{flex:2 1 320px;padding:48px var(--m);display:flex;flex-direction:column;justify-content:space-between;gap:48px}
 .bhero .vis{flex:3 1 480px;min-height:420px}
 .bhero .vis.ph{padding:24px}
@@ -256,3 +262,26 @@ a.btn-solid:hover,button.btn-solid:hover{background:transparent;color:var(--ink)
 /* hero as image slot */
 .hero{background-size:cover;background-position:center}
 .hero.has-img .note{display:none}
+
+/* ---------- brand index page ---------- */
+.bidx{background:var(--surface);color:var(--ink);padding:96px var(--m);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:48px 96px;scroll-margin-top:72px}
+.bidx.flip{flex-direction:row-reverse}
+.bidx .tx{flex:1 1 360px;max-width:560px;display:flex;flex-direction:column;gap:32px;align-items:flex-start}
+.bidx .nm{margin:0;font-size:clamp(44px,5vw,72px);line-height:1.05;color:var(--ink)}
+[data-theme="verase"].bidx .nm,[data-theme="florenne"].bidx .nm{color:var(--accent)}
+.bidx .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px}
+.bidx>.ph{flex:0 1 480px;width:100%}
+.ph.r45{aspect-ratio:4/5}
+
+/* ---------- store page ---------- */
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px 24px}
+.scard{display:flex;flex-direction:column;background:var(--surface);color:var(--ink)}
+.scard .cb{flex:1 1 auto;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;border-top:1px solid var(--line)}
+.scard .nrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.scard .nm{margin:0;font-size:28px;line-height:36px;font-weight:inherit;color:var(--ink)}
+[data-theme="meria"].scard .nm{font-size:34px}
+[data-theme="silt"].scard .nm{font-size:26px}
+[data-theme="verase"].scard .nm{font-size:22px;color:var(--accent)}
+[data-theme="florenne"].scard .nm{font-size:30px;color:var(--accent)}
+.scard .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px}
+.ph.r43{aspect-ratio:4/3}

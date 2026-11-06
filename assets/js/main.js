@@ -45,9 +45,32 @@
     cta.setAttribute('href', h.href);
     cta.textContent = h.cta;
     tabs.forEach(function (t, k) { t.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+    cur = i;
     VA.hydrate(hero.parentNode);
   }
-  tabs.forEach(function (t, i) { t.addEventListener('click', function () { setHero(i); }); });
+  var cur = 0;
+  tabs.forEach(function (t, i) { t.addEventListener('click', function () { if (i !== cur) setHero(i); }); });
+
+  /* 자동 넘김: 활성 탭 위의 진행선(CSS 애니메이션, 길이는 site.css의 --hero-dur)이 끝나면 다음 룩으로.
+     마우스를 올리거나 포커스가 있거나, 화면에서 벗어나거나, 다른 탭을 보고 있으면 일시정지됩니다. */
+  var tabsBox = VA.$('.htabs'), holds = { hover: false, focus: false, hidden: document.hidden, offscreen: false };
+  function applyHold() {
+    var on = holds.hover || holds.focus || holds.hidden || holds.offscreen;
+    tabsBox.classList.toggle('paused', on);
+  }
+  tabsBox.addEventListener('animationend', function (e) {
+    if (e.animationName === 'hprog') setHero((cur + 1) % HERO.length);
+  });
+  [hero, tabsBox].forEach(function (el) {
+    el.addEventListener('mouseenter', function () { holds.hover = true; applyHold(); });
+    el.addEventListener('mouseleave', function () { holds.hover = false; applyHold(); });
+    el.addEventListener('focusin', function (e) { holds.focus = !!(e.target.matches && e.target.matches(':focus-visible')); applyHold(); });
+    el.addEventListener('focusout', function () { holds.focus = false; applyHold(); });
+  });
+  document.addEventListener('visibilitychange', function () { holds.hidden = document.hidden; applyHold(); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) { holds.offscreen = !en[0].isIntersecting; applyHold(); }, { threshold: 0.3 }).observe(hero);
+  }
 
   /* Shop the Look strip */
   var LOOK = [

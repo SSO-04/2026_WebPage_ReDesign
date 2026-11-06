@@ -8,6 +8,15 @@
 - 서버로 열고 싶다면 이 폴더에서 `python3 -m http.server 8000` 후 http://localhost:8000
 - 호스팅은 이 폴더 전체를 Netlify / Vercel / GitHub Pages / 일반 웹호스팅에 그대로 올리면 됩니다.
 
+## 페이지 구성
+| 메뉴 | 파일 | 내용 |
+|---|---|---|
+| HOME (로고) | `index.html` | 메인 — 히어로, 브랜드 카드, Shop the Look, 스토어 |
+| CLOTHING | `category.html` | 전체 상품 목록 (카테고리 탭 · 필터 · 정렬) |
+| BRAND | `brand.html` | 브랜드 목록 (5개 브랜드), 각 브랜드 상세로 연결 |
+| — | `brand-novan.html`, `brand-meria.html` | 브랜드 상세 |
+| STORE | `store.html` | 플래그십 스토어 + 입점 브랜드 스토어 5곳 (주소·영업시간은 `[ ]` 자리표시 — 파일에서 직접 교체) |
+
 ## 작동하는 것
 - 메인: 히어로 룩 전환(5개 브랜드), 브랜드 카드 드래그 슬라이드, Shop the Look(룩에 맞는 아이템) 슬라이드
 - 카테고리: 카테고리 탭, 브랜드/컬러/사이즈/가격 필터, 정렬, 선택 칩, MORE(12개씩), 에디토리얼 타일
@@ -22,9 +31,10 @@
 | 위치 | 파일 이름 (images/ 폴더) |
 |---|---|
 | 메인 히어로 | `novan_hero_01`, `meria_hero_01`, `silt_hero_01`, `verase_hero_01`, `florenne_hero_01` |
+| 브랜드 목록 페이지 | `novan_hero_01` … 히어로와 같은 파일을 사용 |
 | 브랜드 카드 / 카테고리 타일 | `novan_lookbook_02`, `meria_lookbook_02`, `silt_lookbook_02` … |
 | 브랜드 룩북 | `novan_lookbook_01`, `novan_detail_01`, `novan_lookbook_02` / `meria_…` 동일 |
-| 매장 | `store_01` |
+| 매장 | `store_01` (플래그십), `store_novan_01`, `store_meria_01`, `store_silt_01`, `store_verase_01`, `store_florenne_01` |
 | 상품 | `products/<상품id>` 예) `products/novan-oversized-wool-coat-charcoal.jpg` |
 
 상품 id 전체 목록은 `assets/js/data.js`의 `VA.products`에서 확인합니다(브랜드-상품명-컬러 소문자 + 하이픈).

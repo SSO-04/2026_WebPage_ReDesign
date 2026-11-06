@@ -13,13 +13,15 @@
     { brand: 'meria', note: 'MÉRIA LOOK 01 — 테라스, 자연광, 바람에 움직이는 린넨', title: 'MÉRIA — Everyday Escape', img: 'images/meria_lookbook_01', file: 'MERIA_LOOKBOOK_01' }
   ];
 
+  var SCOPE = document.body.getAttribute('data-scope') || 'all';
+  var CLOTHES = ['OUTER', 'TOP', 'BOTTOM', 'DRESS', 'SWIMWEAR'];
   var S = { cat: 'ALL', brand: [], color: [], size: [], price: [], sort: 'newest', shown: PAGE, open: null };
 
   /* ----- state from URL ----- */
   (function () {
     var q = new URLSearchParams(location.search);
     var c = (q.get('cat') || '').toUpperCase();
-    if (c) S.cat = c;
+    if (c && (SCOPE !== 'clothing' || CLOTHES.indexOf(c) > -1)) S.cat = c;
     (q.get('brand') || '').split(',').forEach(function (b) { if (VA.brands[b]) S.brand.push(b); });
   })();
   function syncUrl() {
@@ -33,6 +35,7 @@
 
   function list() {
     var out = VA.products.filter(function (p) {
+      if (SCOPE === 'clothing' && CLOTHES.indexOf(p.cat) < 0) return false;
       if (S.cat !== 'ALL' && p.cat !== S.cat) return false;
       if (S.brand.length && S.brand.indexOf(p.brand) < 0) return false;
       if (S.color.length && S.color.indexOf(p.color) < 0) return false;
